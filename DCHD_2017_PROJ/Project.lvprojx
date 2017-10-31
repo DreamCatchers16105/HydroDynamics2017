@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Version="1.0.2.10" xmlns="http://www.ni.com/SourceModel.xsd">
+    <Namespace Name="Default">
+        <Project xmlns="http://www.ni.com/Project.xsd">
+            <Target DocumentTypeIdentifier="VIVMTarget" Name="VI\ Virtual\ Machine">
+                <ProjectReference ReferenceName="NationalInstruments.VI.VirtualMachine.Runtime, Version=0.0.0.0" ReferencePath="" />
+                <ProjectReference ReferenceName="NationalInstruments.LabVIEW.CoreRuntime, Version=0.0.0.0" ReferencePath="" />
+                <SourceFileReference StoragePath="Activity.x3a" RelativeStoragePath="Activity.x3a" DocumentTypeIdentifier="NationalInstruments.GuidedHelpFramework.Model.GuidedHelp" Name="Activity\.x3a" />
+                <SourceFileReference StoragePath="Shower.ev3p" RelativeStoragePath="Shower.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Shower\.ev3p" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="ActivityAssets\.laz" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.X3.App.X3FolderLoaderDefinition" Name="vi\.lib_" Bindings="Envoy,DefinitionReference,EmbeddedReference" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="___CopyrightYear" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <SourceFileReference StoragePath="Program.ev3p" RelativeStoragePath="Program.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Program\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.X3.App.X3FolderLoaderDefinition" Name="vi\.lib_PBR" Bindings="Envoy,DefinitionReference,EmbeddedReference" />
+                <SourceFileReference StoragePath="Mean.ev3p" RelativeStoragePath="Mean.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Mean\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <SourceFileReference StoragePath="RMS.ev3p" RelativeStoragePath="RMS.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="RMS\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <SourceFileReference StoragePath="SD.ev3p" RelativeStoragePath="SD.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="SD\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="___ProjectTitle" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="___ProjectDescription" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="___ProjectImage" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <SourceFileReference StoragePath="Experiment.ev3e" RelativeStoragePath="Experiment.ev3e" DocumentTypeIdentifier="NationalInstruments.X3.DataLogExperiment.DataServices.DataLogExperiment" Name="Experiment\.ev3e" Bindings="Envoy,DefinitionReference,SourceFileReference">
+                    <SourceFileReference StoragePath="__GraphProgramming_.ev3p" RelativeStoragePath="__GraphProgramming_.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_2.ev3p" RelativeStoragePath="__GraphProgramming_2.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_2\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_3.ev3p" RelativeStoragePath="__GraphProgramming_3.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_3\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_4.ev3p" RelativeStoragePath="__GraphProgramming_4.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_4\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_5.ev3p" RelativeStoragePath="__GraphProgramming_5.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_5\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_6.ev3p" RelativeStoragePath="__GraphProgramming_6.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_6\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_7.ev3p" RelativeStoragePath="__GraphProgramming_7.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_7\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_8.ev3p" RelativeStoragePath="__GraphProgramming_8.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_8\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_9.ev3p" RelativeStoragePath="__GraphProgramming_9.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_9\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_10.ev3p" RelativeStoragePath="__GraphProgramming_10.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_10\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_11.ev3p" RelativeStoragePath="__GraphProgramming_11.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_11\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                    <SourceFileReference StoragePath="__GraphProgramming_12.ev3p" RelativeStoragePath="__GraphProgramming_12.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="__GraphProgramming_12\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                        <X3DocumentSettings ShowFileOnStartup="True" IsTeacherOnlyFile="False" IsHiddenDependency="True" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
+                    </SourceFileReference>
+                </SourceFileReference>
+            </Target>
+            <ProjectSettings>
+                <NamedGlobalData xmlns="http://www.ni.com/X3NamedGlobalData.xsd">
+                    <Datum Name="Sum" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="Count" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="Mean" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="Sum_Sq" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="RMS" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="RMS_sq" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="Std" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="Mean_sq" Kind="Variable" Type="X3Numeric" />
+                </NamedGlobalData>
+                <ProjectOrigin Path="en-US/Internal/FreePlayProgram.ev3" xmlns="http://www.ni.com/X3ProjectOrigin.xsd" />
+                <DaisyChainMode On="False" xmlns="http://www.ni.com/X3ProjectPropertiesModel.xsd" />
+            </ProjectSettings>
+        </Project>
+    </Namespace>
+    <Namespace Name="VI\ Virtual\ Machine">
+        <VIVMTarget xmlns="http://www.ni.com/VIVMTarget.xsd" />
+    </Namespace>
+    <Namespace Name="ActivityAssets\.laz">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>ActivityAssets.laz</RelativeStoragePath>
+            <StoragePath></StoragePath>
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="vi\.lib_">
+        <LoaderDefinition xmlns="http://www.ni.com/LoaderDefinition.xsd">
+            <Type>FolderLoaderDefinition</Type>
+            <Name>vi.lib_</Name>
+            <Location />
+        </LoaderDefinition>
+    </Namespace>
+    <Namespace Name="___CopyrightYear">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>___CopyrightYear</RelativeStoragePath>
+            <StoragePath></StoragePath>
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="vi\.lib_PBR">
+        <LoaderDefinition xmlns="http://www.ni.com/LoaderDefinition.xsd">
+            <Type>FolderLoaderDefinition</Type>
+            <Name>vi.lib_PBR</Name>
+            <Location />
+        </LoaderDefinition>
+    </Namespace>
+    <Namespace Name="___ProjectTitle">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>___ProjectTitle</RelativeStoragePath>
+            <StoragePath />
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="___ProjectDescription">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>___ProjectDescription</RelativeStoragePath>
+            <StoragePath />
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="___ProjectImage">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>___ProjectImage</RelativeStoragePath>
+            <StoragePath />
+        </ExternalFile>
+    </Namespace>
+</SourceFile>
