@@ -17,7 +17,7 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w28" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w32" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
                 </StartBlock>
                 <ConfigurableWhileLoop Id="n30" Bounds="36 160 1597 712" DiagramId="D31" InterruptName="01">
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w36" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 204 18 18" />
@@ -584,14 +584,13 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w31" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w31" Joints="N(n25:SequenceOut) N(n36:SequenceIn)" />
-                <ConfigurableMethodCall Id="n8" Bounds="126 0 75 91" Target="GyroReset\.vix">
+                <ConfigurableMethodCall Id="n8" Bounds="23 -99 75 91" Target="GyroReset\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.2">
                         <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w28" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w32" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
+                    <Terminal Id="SequenceIn" Direction="Input" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w32" Joints="N(n8:SequenceOut) N(n9:SequenceIn)" />
                 <ConfigurableMethodCall Id="n27" Bounds="807 0 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="Speed">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
@@ -631,7 +630,6 @@ Number Initial_rotation (0 &gt; &gt; 100)
 Number Smooth_factor (0 &gt; &gt; 10)
 </Content>
                 </Comment>
-                <Wire Id="w28" Joints="N(n1:SequenceOut) N(n8:SequenceIn)" />
                 <ConfigurableMegaAccessor Id="n34" Bounds="-174 0 142 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Direction" Direction="Output" Wire="w27" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
@@ -665,6 +663,7 @@ Number Smooth_factor (0 &gt; &gt; 10)
                 </ConfigurableMethodCall>
                 <Wire Id="w36" Joints="N(n5:SequenceOut) h(10) v(115) h(-1035) v(216) N(n30:SequenceIn)" />
                 <Wire Id="w35" Joints="N(n30:SequenceOut) N(n69:SequenceIn)" />
+                <Wire Id="w32" Joints="N(n1:SequenceOut) N(n9:SequenceIn)" />
             </BlockDiagram>
             <Icon>
                 <Model0:IconPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model0="clr-namespace:NationalInstruments.LabVIEW.VI.Design;assembly=NationalInstruments.LabVIEW.VI.SourceModel" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:ation="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="84" Width="56">
