@@ -2,7 +2,7 @@
 <SourceFile Version="1.0.2.10" xmlns="http://www.ni.com/SourceModel.xsd">
     <Namespace Name="Project">
         <DataLogExperiment xmlns="http://www.ni.com/DataLogExperiment.xsd">
-            <XAxisRange Min="0" Max="5" />
+            <XAxisRange Min="0" Max="100" />
             <XAxisUnits>Seconds</XAxisUnits>
             <Duration>5</Duration>
             <DurationUnits>Seconds</DurationUnits>
@@ -10,6 +10,28 @@
             <RateMode>SamplesPerSecond</RateMode>
             <ShowEnabledZones>True</ShowEnabledZones>
             <Axes>
+                <Axis>
+                    <ID>UltrasonicSensor:MeasureCentimeters:2</ID>
+                    <Label>Ultrasonic:DistanceCentimeters:2</Label>
+                    <Orientation>Vertical</Orientation>
+                    <Min>0</Min>
+                    <Max>200</Max>
+                    <IsSelected>False</IsSelected>
+                    <Port>1.2</Port>
+                    <Name>UltrasonicSensor</Name>
+                    <Mode>MeasureCentimeters</Mode>
+                    <Units AvailableUnits="cm,in" />
+                    <Unit>cm</Unit>
+                    <Color>#FFAB0043</Color>
+                    <IsAutoScale>False</IsAutoScale>
+                    <IsCalculatedAxis>False</IsCalculatedAxis>
+                    <TriggerLock>False</TriggerLock>
+                    <Trigger0 Value="132" />
+                    <Trigger1 Value="66" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_4.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_5.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_6.ev3p" />
+                </Axis>
                 <Axis>
                     <ID>ColorSensor:MeasureReflectedLight:1</ID>
                     <Label>Color:ReflectedLightIntensity:1</Label>
@@ -25,34 +47,100 @@
                     <Color>#FF785028</Color>
                     <IsAutoScale>False</IsAutoScale>
                     <IsCalculatedAxis>False</IsCalculatedAxis>
-                    <TriggerLock>False</TriggerLock>
+                    <TriggerLock>True</TriggerLock>
                     <Trigger0 Value="66" />
                     <Trigger1 Value="33" />
-                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_.ev3p" />
-                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_2.ev3p" />
-                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_3.ev3p" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_13.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_14.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_15.ev3p" />
                 </Axis>
                 <Axis>
-                    <ID>UltrasonicSensor:MeasureCentimeters:2</ID>
-                    <Label>Ultrasonic:DistanceCentimeters:2</Label>
+                    <ID>Gyro:MeasureAngle:2</ID>
+                    <Label>Gyro:Angle:2</Label>
                     <Orientation>Vertical</Orientation>
-                    <Min>0</Min>
-                    <Max>255</Max>
-                    <IsSelected>True</IsSelected>
+                    <Min>-180</Min>
+                    <Max>180</Max>
+                    <IsSelected>False</IsSelected>
                     <Port>2</Port>
-                    <Name>UltrasonicSensor</Name>
-                    <Mode>MeasureCentimeters</Mode>
-                    <Units AvailableUnits="cm,in" />
-                    <Unit>cm</Unit>
-                    <Color>#FFFFC800</Color>
+                    <Name>Gyro</Name>
+                    <Mode>MeasureAngle</Mode>
+                    <Units AvailableUnits="" />
+                    <Unit>deg</Unit>
+                    <Color>#FF5D5D5D</Color>
                     <IsAutoScale>False</IsAutoScale>
                     <IsCalculatedAxis>False</IsCalculatedAxis>
                     <TriggerLock>True</TriggerLock>
-                    <Trigger0 Value="168.3" />
-                    <Trigger1 Value="84.15" />
-                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_4.ev3p" />
-                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_5.ev3p" />
-                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_6.ev3p" />
+                    <Trigger0 Value="57.6" />
+                    <Trigger1 Value="-61.2" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_16.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_17.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_18.ev3p" />
+                </Axis>
+                <Axis>
+                    <ID>TouchSensor:Measure:3</ID>
+                    <Label>Touch:State:3</Label>
+                    <Orientation>Vertical</Orientation>
+                    <Min>0</Min>
+                    <Max>1</Max>
+                    <IsSelected>False</IsSelected>
+                    <Port>3</Port>
+                    <Name>TouchSensor</Name>
+                    <Mode>Measure</Mode>
+                    <Units AvailableUnits="" />
+                    <Unit></Unit>
+                    <Color>#FFAB0043</Color>
+                    <IsAutoScale>False</IsAutoScale>
+                    <IsCalculatedAxis>False</IsCalculatedAxis>
+                    <TriggerLock>True</TriggerLock>
+                    <Trigger0 Value="0.66" />
+                    <Trigger1 Value="0.33" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_19.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_20.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_21.ev3p" />
+                </Axis>
+                <Axis>
+                    <ID>ColorSensor:MeasureReflectedLight:4</ID>
+                    <Label>Color:ReflectedLightIntensity:4</Label>
+                    <Orientation>Vertical</Orientation>
+                    <Min>0</Min>
+                    <Max>100</Max>
+                    <IsSelected>False</IsSelected>
+                    <Port>4</Port>
+                    <Name>ColorSensor</Name>
+                    <Mode>MeasureReflectedLight</Mode>
+                    <Units AvailableUnits="" />
+                    <Unit>%</Unit>
+                    <Color>#FF785028</Color>
+                    <IsAutoScale>False</IsAutoScale>
+                    <IsCalculatedAxis>False</IsCalculatedAxis>
+                    <TriggerLock>True</TriggerLock>
+                    <Trigger0 Value="66" />
+                    <Trigger1 Value="33" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_22.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_23.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_24.ev3p" />
+                </Axis>
+                <Axis>
+                    <ID>RotationSensor:MeasureDegrees:A</ID>
+                    <Label>Rotation:Degrees:A</Label>
+                    <Orientation>Vertical</Orientation>
+                    <Min>-180</Min>
+                    <Max>180</Max>
+                    <IsSelected>False</IsSelected>
+                    <Port>A</Port>
+                    <Name>RotationSensor</Name>
+                    <Mode>MeasureDegrees</Mode>
+                    <Units AvailableUnits="rot,deg" />
+                    <Unit>deg</Unit>
+                    <Color>#FF6B3099</Color>
+                    <IsAutoScale>False</IsAutoScale>
+                    <IsCalculatedAxis>False</IsCalculatedAxis>
+                    <TriggerLock>True</TriggerLock>
+                    <Trigger0 Value="57.6" />
+                    <Trigger1 Value="-61.2" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_25.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_26.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_27.ev3p" />
                 </Axis>
                 <Axis>
                     <ID>RotationSensor:MeasureDegrees:B</ID>
@@ -72,9 +160,9 @@
                     <TriggerLock>True</TriggerLock>
                     <Trigger0 Value="57.6" />
                     <Trigger1 Value="-61.2" />
-                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_7.ev3p" />
-                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_8.ev3p" />
-                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_9.ev3p" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_28.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_29.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_30.ev3p" />
                 </Axis>
                 <Axis>
                     <ID>RotationSensor:MeasureDegrees:C</ID>
@@ -94,450 +182,18 @@
                     <TriggerLock>True</TriggerLock>
                     <Trigger0 Value="57.6" />
                     <Trigger1 Value="-61.2" />
-                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_10.ev3p" />
-                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_11.ev3p" />
-                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_12.ev3p" />
+                    <Zone0 IsEnabled="False" VIName="__GraphProgramming_31.ev3p" />
+                    <Zone1 IsEnabled="False" VIName="__GraphProgramming_32.ev3p" />
+                    <Zone2 IsEnabled="False" VIName="__GraphProgramming_33.ev3p" />
                 </Axis>
             </Axes>
-            <Datasets>
-                <Dataset>
-                    <ID>f1e32c36-89ac-c364-757b-91a6d294d35b</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_01</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:54 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>622605ca-9214-4fc5-726e-55a95947f5a5</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_02</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:54 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>834589f2-9abd-2dfa-849f-2886b8ca19f6</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_03</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:54 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>f615ea39-3524-3798-5898-80b661adafc8</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_04</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:54 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>63114781-a73a-962a-b444-7719e78d8d72</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_05</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:54 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>634a75a6-4ca6-536a-363c-0a9923583b7e</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_06</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>aaf09bd9-e820-3fb7-e975-06960736e554</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_07</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>ce09d8a8-7083-7c8c-f541-23d353b00847</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_08</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>bd2d0da3-04bb-395a-cd4b-861df818add4</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_09</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>4431c9ef-0fdb-3af4-b9dc-987f8f188dc0</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_10</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>f6eddd50-a103-3029-af2f-0db0fb970578</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_11</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>6459571f-6ac5-766b-5e0e-5f10b786ed24</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_12</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>64b94d90-d9d7-218d-263b-96fe04a0ad15</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_13</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>0d4f0dd2-e41a-a729-99ee-8474f5ad3fc4</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_14</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>a1fd5550-73e1-062c-05f0-dacfca9ecf90</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_15</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>FilledCircle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>False</IsSelected>
-                    <StartTime>9:55:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>0</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-                <Dataset>
-                    <ID>b2724fbf-7909-61bf-b2ab-e6837468aa68</ID>
-                    <Units SelectedUnit="cm" AvailableUnits="cm,in" />
-                    <Name>Ultrasonic_p2_16</Name>
-                    <Port>2</Port>
-                    <Sensor>UltrasonicSensor</Sensor>
-                    <SensorMode>0</SensorMode>
-                    <BaseColor>#FFFFC800</BaseColor>
-                    <Color>#FFFFC800</Color>
-                    <IsColorManuallyConfigured>False</IsColorManuallyConfigured>
-                    <PlotColorFadeStep>0</PlotColorFadeStep>
-                    <PlotPointShape>NoStyle</PlotPointShape>
-                    <PlotVisibility>True</PlotVisibility>
-                    <IsSelected>True</IsSelected>
-                    <StartTime>9:58:55 PM 10/30/2017</StartTime>
-                    <Duration>0</Duration>
-                    <Rate>10</Rate>
-                    <Source>Acquired</Source>
-                    <VerticalAxisID>UltrasonicSensor:MeasureCentimeters:2</VerticalAxisID>
-                    <CurveFit>None</CurveFit>
-                    <DataPoints>
-                        <Point>0:6.30000019073486</Point>
-                        <Point>0.1:6.30000019073486</Point>
-                        <Point>0.2:6.30000019073486</Point>
-                        <Point>0.3:6.30000019073486</Point>
-                        <Point>0.4:6.30000019073486</Point>
-                        <Point>0.5:6.30000019073486</Point>
-                        <Point>0.6:6.30000019073486</Point>
-                        <Point>0.7:6.30000019073486</Point>
-                        <Point>0.8:6.30000019073486</Point>
-                        <Point>0.9:6.30000019073486</Point>
-                        <Point>1:6.30000019073486</Point>
-                        <Point>1.1:6.30000019073486</Point>
-                        <Point>1.2:6.30000019073486</Point>
-                        <Point>1.3:6.30000019073486</Point>
-                        <Point>1.4:6.30000019073486</Point>
-                        <Point>1.5:6.30000019073486</Point>
-                        <Point>1.6:6.30000019073486</Point>
-                        <Point>1.7:6.30000019073486</Point>
-                        <Point>1.8:6.30000019073486</Point>
-                        <Point>1.9:6.30000019073486</Point>
-                        <Point>2:6.30000019073486</Point>
-                        <Point>2.1:6.30000019073486</Point>
-                        <Point>2.2:6.30000019073486</Point>
-                        <Point>2.3:6.30000019073486</Point>
-                        <Point>2.4:6.30000019073486</Point>
-                        <Point>2.5:6.30000019073486</Point>
-                        <Point>2.6:6.30000019073486</Point>
-                        <Point>2.7:6.30000019073486</Point>
-                        <Point>2.8:6.30000019073486</Point>
-                        <Point>2.9:6.30000019073486</Point>
-                        <Point>3:6.30000019073486</Point>
-                        <Point>3.1:6.30000019073486</Point>
-                        <Point>3.2:6.30000019073486</Point>
-                        <Point>3.3:6.30000019073486</Point>
-                        <Point>3.4:6.30000019073486</Point>
-                        <Point>3.5:6.30000019073486</Point>
-                        <Point>3.6:6.30000019073486</Point>
-                        <Point>3.7:6.30000019073486</Point>
-                        <Point>3.8:6.30000019073486</Point>
-                        <Point>3.9:6.30000019073486</Point>
-                        <Point>4:6.30000019073486</Point>
-                        <Point>4.1:6.30000019073486</Point>
-                        <Point>4.2:6.30000019073486</Point>
-                        <Point>4.3:6.30000019073486</Point>
-                        <Point>4.4:6.30000019073486</Point>
-                        <Point>4.5:6.30000019073486</Point>
-                        <Point>4.6:6.30000019073486</Point>
-                        <Point>4.7:6.30000019073486</Point>
-                        <Point>4.8:6.30000019073486</Point>
-                        <Point>4.9:6.30000019073486</Point>
-                        <Point>5:6.30000019073486</Point>
-                    </DataPoints>
-                </Dataset>
-            </Datasets>
             <PortConfigurations>
+                <PortConfiguration SelectedHardware="UltrasonicSensor" SelectedMode="PolyGroup_UltrasonicSensor_Mode_MeasureCentimeters" SelectedPort="1.2" SelectedPlotColor="#FFAB0043" IsPortConfigured="True" />
                 <PortConfiguration SelectedHardware="ColorSensor" SelectedMode="PolyGroup_ColorSensor_Mode_MeasureReflectedLight" SelectedPort="1.1" SelectedPlotColor="#FF785028" IsPortConfigured="True" />
-                <PortConfiguration SelectedHardware="UltrasonicSensor" SelectedMode="PolyGroup_UltrasonicSensor_Mode_MeasureCentimeters" SelectedPort="1.2" SelectedPlotColor="#FFFFC800" IsPortConfigured="True" />
+                <PortConfiguration SelectedHardware="Gyro" SelectedMode="PolyGroup_Gyro_Mode_MeasureAngle" SelectedPort="1.2" SelectedPlotColor="#FF5D5D5D" IsPortConfigured="True" />
+                <PortConfiguration SelectedHardware="TouchSensor" SelectedMode="PolyGroup_TouchSensor_Mode_Measure" SelectedPort="1.3" SelectedPlotColor="#FFAB0043" IsPortConfigured="True" />
+                <PortConfiguration SelectedHardware="ColorSensor" SelectedMode="PolyGroup_ColorSensor_Mode_MeasureReflectedLight" SelectedPort="1.4" SelectedPlotColor="#FF785028" IsPortConfigured="True" />
+                <PortConfiguration SelectedHardware="RotationSensor" SelectedMode="PolyGroup_RotationSensor_Mode_MeasureDegrees" SelectedPort="1.A" SelectedPlotColor="#FF6B3099" IsPortConfigured="True" />
                 <PortConfiguration SelectedHardware="RotationSensor" SelectedMode="PolyGroup_RotationSensor_Mode_MeasureDegrees" SelectedPort="1.B" SelectedPlotColor="#FF6B3099" IsPortConfigured="True" />
                 <PortConfiguration SelectedHardware="RotationSensor" SelectedMode="PolyGroup_RotationSensor_Mode_MeasureDegrees" SelectedPort="1.C" SelectedPlotColor="#FF6B3099" IsPortConfigured="True" />
             </PortConfigurations>
