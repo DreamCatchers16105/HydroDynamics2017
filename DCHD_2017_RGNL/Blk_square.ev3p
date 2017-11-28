@@ -55,7 +55,7 @@ RIGHT: Sensor 4, Motor C</Content>
                             <ConfigurableMethodTerminal ConfiguredValue="4">
                                 <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="12">
+                            <ConfigurableMethodTerminal ConfiguredValue="18">
                                 <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -113,7 +113,7 @@ RIGHT: Sensor 4, Motor C</Content>
                             <ConfigurableMethodTerminal ConfiguredValue="4">
                                 <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="12">
+                            <ConfigurableMethodTerminal ConfiguredValue="18">
                                 <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -148,7 +148,7 @@ RIGHT: Sensor 4, Motor C</Content>
                     <Wire Id="w4" Joints="N(n0:SequenceOut) N(n15:SequenceIn)" />
                     <Wire Id="w5" Joints="N(n15:SequenceOut) v(-4) N(n1:SequenceIn)" />
                 </ConfigurableWhileLoop>
-                <Wire Id="w19" Joints="N(n17:SequenceOut) h(43.5) v(345) N(n15:SequenceIn) B(0) h(43.5) v(-15) N(n18:SequenceIn)" />
+                <Wire Id="w19" Joints="N(n17:SequenceOut) h(43.5) v(-15) N(n18:SequenceIn) B(0) h(43.5) v(345) N(n15:SequenceIn)" />
                 <ConfigurableMethodCall Id="n19" Bounds="1098 19 101 91" Target="MotorStop\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.A">
                         <Terminal Id="MotorPort" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
@@ -198,7 +198,7 @@ RIGHT: Sensor 4, Motor C</Content>
                             <ConfigurableMethodTerminal ConfiguredValue="4">
                                 <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="12">
+                            <ConfigurableMethodTerminal ConfiguredValue="18">
                                 <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -221,7 +221,7 @@ RIGHT: Sensor 4, Motor C</Content>
                         <ConfigurableMethodTerminal ConfiguredValue="3">
                             <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="14">
+                        <ConfigurableMethodTerminal ConfiguredValue="20">
                             <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -313,7 +313,7 @@ RIGHT: Sensor 4, Motor C</Content>
                             <ConfigurableMethodTerminal ConfiguredValue="4">
                                 <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="12">
+                            <ConfigurableMethodTerminal ConfiguredValue="18">
                                 <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -336,7 +336,7 @@ RIGHT: Sensor 4, Motor C</Content>
                         <ConfigurableMethodTerminal ConfiguredValue="3">
                             <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="14">
+                        <ConfigurableMethodTerminal ConfiguredValue="20">
                             <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
