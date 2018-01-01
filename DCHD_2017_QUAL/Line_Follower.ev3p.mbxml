@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_000_MyBlockRed">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>PID Line Follower</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Count" DisplayName="Count" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="100" />
+        <ParamInfo Name="Sensor" DisplayName="Sensor" Direction="Input" Identification="Identification_515_Port.png" DataType="Single" DefaultValue="1" />
+        <ParamInfo Name="Target" DisplayName="Target" Direction="Input" Identification="Identification_072_BlackWhite.png" DataType="Single" DefaultValue="12" Configuration="SliderVertical.custom" MinValue="0" MaxValue="100" />
+        <ParamInfo Name="Speed" DisplayName="Speed" Direction="Input" Identification="Identification_202_Speed_Plus50.png" DataType="Single" DefaultValue="30" Configuration="SliderVertical.custom" MinValue="0" MaxValue="100" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
