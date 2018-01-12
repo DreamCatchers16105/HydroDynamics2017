@@ -191,7 +191,7 @@
                                 <Terminal Id="Output" Direction="Output" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
                             <SequenceNode Id="n2" Bounds="1150 102 18 18">
-                                <Terminal Id="Input" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
+                                <Terminal Id="Input" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
                             <Wire Id="w4" Joints="N(n1:Output) N(n9:SequenceIn)" />
                             <ConfigurableMethodCall Id="n9" Bounds="18 69 132 91" Target="PlaySoundFile\.vix">
@@ -235,17 +235,17 @@
                                     <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                 </ConfigurableMethodTerminal>
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                                <Terminal Id="SequenceOut" Direction="Output" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
+                                <Terminal Id="SequenceOut" Direction="Output" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
                             </ConfigurableMethodCall>
                             <Wire Id="w8" Joints="N(n8:SequenceOut) N(n18:SequenceIn)" />
-                            <Wire Id="w9" Joints="N(n18:SequenceOut) N(n2:Input)" />
+                            <Wire Id="w10" Joints="N(n18:SequenceOut) N(n2:Input)" />
                         </ConfigurableFlatCaseStructure.Case>
                         <ConfigurableFlatCaseStructure.Case Id="D26" Bounds="10 869 1169 165" Pattern="5">
                             <SequenceNode Id="n1" Bounds="0 65 18 18">
                                 <Terminal Id="Output" Direction="Output" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
                             <SequenceNode Id="n2" Bounds="1150 65 18 18">
-                                <Terminal Id="Input" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
+                                <Terminal Id="Input" Direction="Input" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
                             <ConfigurableMethodCall Id="n9" Bounds="18 32 132 91" Target="PlaySoundFile\.vix">
                                 <ConfigurableMethodTerminal ConfiguredValue="Click">
@@ -289,10 +289,10 @@
                                     <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                 </ConfigurableMethodTerminal>
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                                <Terminal Id="SequenceOut" Direction="Output" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
+                                <Terminal Id="SequenceOut" Direction="Output" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
                             </ConfigurableMethodCall>
-                            <Wire Id="w9" Joints="N(n11:SequenceOut) N(n2:Input)" />
                             <Wire Id="w10" Joints="N(n8:SequenceOut) N(n11:SequenceIn)" />
+                            <Wire Id="w11" Joints="N(n11:SequenceOut) N(n2:Input)" />
                         </ConfigurableFlatCaseStructure.Case>
                         <ConfigurableFlatCaseStructure.Case Id="D27" Bounds="10 1041 1169 1134" Pattern="2">
                             <SequenceNode Id="n1" Bounds="0 223 18 18">
