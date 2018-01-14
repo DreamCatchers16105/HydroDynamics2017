@@ -238,7 +238,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="50">
                         <Terminal Id="Speed\ Right" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="1.01">
+                    <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="Rotations" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="True">
@@ -260,7 +260,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="50">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0.37">
+                    <ConfigurableMethodTerminal ConfiguredValue="0.39">
                         <Terminal Id="Rotations" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="True">
@@ -397,7 +397,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="1.A+D">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="-6">
+                    <ConfigurableMethodTerminal ConfiguredValue="-2">
                         <Terminal Id="Steering" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="100">
@@ -513,7 +513,7 @@
                 <Wire Id="w65" Joints="N(n44:SequenceOut) N(n50:SequenceIn)" />
                 <Wire Id="w59" Joints="N(n4:SequenceOut) N(n2:SequenceIn)" />
                 <Wire Id="w55" Joints="N(n54:SequenceOut) N(n55:SequenceIn)" />
-                <Wire Id="w53" Joints="N(n35:SequenceOut) h(20) v(109) N(n62:SequenceIn) B(0) N(n44:SequenceIn)" />
+                <Wire Id="w53" Joints="N(n35:SequenceOut) N(n44:SequenceIn) B(0) h(20) v(109) N(n62:SequenceIn)" />
                 <Wire Id="w51" Joints="N(n61:SequenceOut) N(n43:SequenceIn)" />
                 <ConfigurableMethodCall Id="n53" Bounds="823 461 194 91" Target="MoveDistanceRotations\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.A+D">
@@ -579,7 +579,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="85">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="-0.6">
+                    <ConfigurableMethodTerminal ConfiguredValue="-0.67">
                         <Terminal Id="Rotations" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="True">
@@ -591,6 +591,12 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w75" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
+                <Comment Bounds="323 -178 167 80" SizeMode="User" AttachStyle="Free">
+                    <Content>forty points
+Forty Points
+FORTY POINTS
+FORTY STINKING POINTS</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

@@ -190,7 +190,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="1.A+D">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="-31">
+                    <ConfigurableMethodTerminal ConfiguredValue="-30">
                         <Terminal Id="Speed\ Left" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="-7">
@@ -417,13 +417,13 @@
                     <ConfigurableMethodTerminal ConfiguredValue="1.A+D">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="-0.8">
+                    <ConfigurableMethodTerminal ConfiguredValue="-0.7">
                         <Terminal Id="Steering" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="-95">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="10">
+                    <ConfigurableMethodTerminal ConfiguredValue="10.2">
                         <Terminal Id="Rotations" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="True">
@@ -545,7 +545,7 @@
                 <Wire Id="w61" Joints="N(n25:SequenceOut) N(n24:SequenceIn)" />
                 <Wire Id="w62" Joints="N(n46:SequenceOut) N(n37:SequenceIn)" />
                 <Wire Id="w63" Joints="N(n28:SequenceOut) h(10) v(53) h(-1148) v(116) N(n29:SequenceIn)" />
-                <Wire Id="w57" Joints="N(n24:SequenceOut) h(20) v(58) h(115) v(62) N(n22:SequenceIn) B(0) N(n28:SequenceIn)" />
+                <Wire Id="w57" Joints="N(n24:SequenceOut) N(n28:SequenceIn) B(0) h(20) v(58) h(115) v(62) N(n22:SequenceIn)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
