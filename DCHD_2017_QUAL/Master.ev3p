@@ -289,10 +289,25 @@
                                     <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                 </ConfigurableMethodTerminal>
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+<<<<<<< HEAD
                                 <Terminal Id="SequenceOut" Direction="Output" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
                             </ConfigurableMethodCall>
                             <Wire Id="w10" Joints="N(n8:SequenceOut) N(n11:SequenceIn)" />
                             <Wire Id="w11" Joints="N(n11:SequenceOut) N(n2:Input)" />
+=======
+                                <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
+                            </ConfigurableMethodCall>
+                            <Wire Id="w10" Joints="N(n8:SequenceOut) N(n11:SequenceIn)" />
+                            <ConfigurableMethodCall Id="n12" Bounds="388 32 75 91" Target="F_arm_init_Rev\.ev3p">
+                                <ConfigurableMethodTerminal ConfiguredValue="0">
+                                    <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                                </ConfigurableMethodTerminal>
+                                <Terminal Id="SequenceIn" Direction="Input" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                                <Terminal Id="SequenceOut" Direction="Output" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
+                            </ConfigurableMethodCall>
+                            <Wire Id="w11" Joints="N(n12:SequenceOut) N(n2:Input)" />
+                            <Wire Id="w12" Joints="N(n11:SequenceOut) N(n12:SequenceIn)" />
+>>>>>>> origin/master
                         </ConfigurableFlatCaseStructure.Case>
                         <ConfigurableFlatCaseStructure.Case Id="D27" Bounds="10 1041 1169 1134" Pattern="2">
                             <SequenceNode Id="n1" Bounds="0 223 18 18">

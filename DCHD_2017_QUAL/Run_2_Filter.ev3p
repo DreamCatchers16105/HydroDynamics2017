@@ -135,7 +135,12 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w40" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w39" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
+<<<<<<< HEAD
                 <ConfigurableMethodCall Id="n45" Bounds="435 0 194 91" Target="Drive_Slow_Stop\.ev3p">
+=======
+                <Wire Id="w48" Joints="N(n38:SequenceOut) h(3) v(-123) N(n8:SequenceIn) B(0) N(n43:SequenceIn)" />
+                <ConfigurableMethodCall Id="n45" Bounds="510 0 194 91" Target="Drive_Slow_Stop\.ev3p">
+>>>>>>> origin/master
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -188,7 +193,11 @@
                     <ConfigurableMethodTerminal ConfiguredValue="-50">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
+<<<<<<< HEAD
                     <ConfigurableMethodTerminal ConfiguredValue="0.77">
+=======
+                    <ConfigurableMethodTerminal ConfiguredValue="0.8">
+>>>>>>> origin/master
                         <Terminal Id="Rotations" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="True">
@@ -205,7 +214,11 @@
                     <ConfigurableMethodTerminal ConfiguredValue="1.A+D">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
+<<<<<<< HEAD
                     <ConfigurableMethodTerminal ConfiguredValue="-22">
+=======
+                    <ConfigurableMethodTerminal ConfiguredValue="-20">
+>>>>>>> origin/master
                         <Terminal Id="Steering" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="90">
