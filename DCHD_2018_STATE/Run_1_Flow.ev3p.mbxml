@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_095_KeepAlive">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>the first mission, drop a big water in other team's thingy. right before the Run 2 Filter</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
